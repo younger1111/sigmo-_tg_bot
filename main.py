@@ -11,8 +11,6 @@ API_TOKEN = os.getenv("API_TOKEN")
 if not API_TOKEN:
     sys.exit("Ошибка: API-токен не задан в переменных окружениях")
 
-API_TOKEN = "8529138040:AAEf789HOVHy9KEKqpxZTsc6DTTJQ5wXSMQ"
-
 bot = telebot.TeleBot(API_TOKEN)
 app = Flask(__name__)
 
