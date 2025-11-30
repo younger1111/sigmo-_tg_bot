@@ -160,7 +160,7 @@ if __name__ == '__main__':
         except Exception:
             logging.exception("Ошибка при установке webhook")
 
-        port = int(os.getnv("port", 10000))
+        port = int(os.getenv("port", 10000))
         logging.info(f"Запуск на порте{port}")
         app.run(host='0.0.0.0',port = port)
     else:
